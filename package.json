@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@framer/plugin": "^4",
+    "express": "^4.22.2",
     "react": "^18",
     "react-dom": "^18",
     "vite-plugin-mkcert": "^1"

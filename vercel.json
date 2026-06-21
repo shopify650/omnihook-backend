@@ -1,9 +1,0 @@
-{
-  "version": 2,
-  "routes": [
-    {
-      "src": "/validate-license",
-      "dest": "/api/validate-license"
-    }
-  ]
-}
