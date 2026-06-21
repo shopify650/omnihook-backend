@@ -61,3 +61,25 @@ set VITE_BACKEND_URL=http://localhost:3000 && npm run build
 ```
 
 In production, use your HTTPS backend URL and make sure the token is rotated immediately after revocation.
+
+## Deploying to Vercel
+
+This repository includes a `vercel.json` file to deploy the backend as a serverless function.
+
+1. Connect this GitHub repo to Vercel.
+2. In Vercel, set the environment variable:
+   - `WHOP_API_TOKEN`
+3. Deploy the project.
+
+If you want to test locally with Vercel's CLI, you can run:
+
+```bash
+npm install -g vercel
+vercel dev
+```
+
+Then build the plugin against the local backend:
+
+```bash
+set VITE_BACKEND_URL=http://localhost:3000 && npm run build
+```
