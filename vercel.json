@@ -1,15 +1,17 @@
 {
   "version": 2,
-  "experimentalServices": {
-    "frontend": {
-      "routePrefix": "/",
-      "framework": "vite"
-    },
-    "backend": {
-      "root": "backend",
-      "routePrefix": "/_/backend",
-      "runtime": "vercel-nodejs@4.3.0",
-      "entrypoint": "index.js"
+  "experimental": {
+    "services": {
+      "frontend": {
+        "routePrefix": "/",
+        "framework": "vite"
+      },
+      "backend": {
+        "root": "backend",
+        "routePrefix": "/_/backend",
+        "runtime": "vercel-nodejs@4.3.0",
+        "entrypoint": "index.js"
+      }
     }
   },
   "routes": [
