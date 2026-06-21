@@ -1,19 +1,19 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "backend/index.js",
-      "use": "@vercel/node"
+  "experimentalServices": {
+    "frontend": {
+      "routePrefix": "/",
+      "framework": "vite"
+    },
+    "backend": {
+      "root": "backend",
+      "routePrefix": "/_/backend"
     }
-  ],
+  },
   "routes": [
     {
       "src": "/validate-license",
-      "dest": "/backend/index.js"
-    },
-    {
-      "src": "/",
-      "dest": "/backend/index.js"
+      "dest": "/_/backend/validate-license"
     }
   ]
 }
